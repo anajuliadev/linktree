@@ -6,13 +6,11 @@
 }
 body{
   background-repeat:no-repeat;
-
   background-size:cover;
-
   /*unica propiedade*/
-  background-image: url(./assets/background.png);
+  background-image: url(./assets/background-moon.png);
   height: 100vh;
-  
+  background-position: top;
 }
 /* * usado para aplixar em tudo*/
 body *{
@@ -20,10 +18,18 @@ body *{
   color: white;
 
 }
+.pai-pag1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 #container{
-  width: 360px;
+    
+}
+.page-width{
+  max-width: 80%;
 
-  
 }
 #profile{
   text-align: center;
@@ -41,7 +47,7 @@ body *{
 }
 #profile p{
   line-height: 48px;
-  margin: 23px;
+  margin: 20px 0;
 }
 
 /*links*/
@@ -54,12 +60,18 @@ ul{
 
 ul li{
 
-  border: 1px solid #ffffff;
+  border: 1px solid #b8a3a3;
   padding:15px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   text-align: center;
-
+  backdrop-filter: blur(10px);
+  transition: 0.3s all;
+}
+ul li:hover{
+  border: 1.5px solid #ffffff;
+  background: rgba(255, 255, 255, 0.30);
+  transition: 0.3s all;
 }
 ul li a{
   text-decoration:none;
@@ -67,7 +79,7 @@ ul li a{
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  backdrop-filter: blur(4px);
+  
 }
 #cargo{
   font-weight: 400;
