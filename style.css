@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /*medida atravez da borda*/
+}
+body{
+  background-repeat:no-repeat;
+
+  background-size:cover;
+
+  /*unica propiedade*/
+  background-image: url(./assets/background.png);
+  height: 100vh;
+  
+}
+/* * usado para aplixar em tudo*/
+body *{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+
+}
+#container{
+  width: 360px;
+
+  
+}
+#profile{
+  text-align: center;
+  padding:24px;
+  /*css.trics pesquisar*/
+}
+#profile img{
+  width: 155px;
+/* em elemento inline n da pra botar margin auto*/
+  border: 2px solid #ffffff;
+  /* border pede px, tipo da borda e cor*/
+  border-radius: 50px;
+  
+
+}
+#profile p{
+  line-height: 48px;
+  margin: 23px;
+}
+
+/*links*/
+ul{
+  list-style: none;
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul li{
+
+  border: 1px solid #ffffff;
+  padding:15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+
+}
+ul li a{
+  text-decoration:none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  backdrop-filter: blur(4px);
+}
+#cargo{
+  font-weight: 400;
+  font-size:25px;
+}
+#nome{
+  font-weight: 700;
+  font-size: 35px;
+}
+
+/*ICONES*/
+
+.icone-social{
+  text-align: center;
+  margin-top: 30px;
+}
+.icones{
+  margin-right: 20px;
+}
+
+#final{
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  padding-top:30px;
+}
+#final span{
+  font-weight: 700;
+}
+
