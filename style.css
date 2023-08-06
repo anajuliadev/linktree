@@ -4,18 +4,27 @@
   box-sizing: border-box;
   /*medida atravez da borda*/
 }
+:root{
+  --text-color: #ffffff;
+  --bg-url: url(./assets/background-moon.png);
+  --stroke-color:
+}
+.mode-light{
+  --text-color: black;
+  --bg-url: url(./assets/background-claro.png);
+}
 body{
   background-repeat:no-repeat;
   background-size:cover;
   /*unica propiedade*/
-  background-image: url(./assets/background-moon.png);
+  background-image: var(--bg-url);
   height: 100vh;
   background-position: top;
 }
 /* * usado para aplixar em tudo*/
 body *{
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: var(--text-color);
 
 }
 .pai-pag1{
@@ -39,7 +48,7 @@ body *{
 #profile img{
   width: 155px;
 /* em elemento inline n da pra botar margin auto*/
-  border: 2px solid #ffffff;
+  border: 2px solid var(--text-color);
   /* border pede px, tipo da borda e cor*/
   border-radius: 50px;
   
@@ -60,7 +69,7 @@ ul{
 
 ul li{
 
-  border: 1px solid #b8a3a3;
+  border: 2px solid #ffffff7d;
   padding:15px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -69,7 +78,7 @@ ul li{
   transition: 0.3s all;
 }
 ul li:hover{
-  border: 1.5px solid #ffffff;
+  border: 2px solid var(--text-color);
   background: rgba(255, 255, 255, 0.30);
   transition: 0.3s all;
 }
@@ -96,8 +105,20 @@ ul li a{
   text-align: center;
   margin-top: 30px;
 }
+
 .icones {
   margin-right: 20px;
+}
+
+.icone-social a{
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  top:0; 
+}
+.icone-social a:hover{
+  top:-6px;
+  position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 #final{
