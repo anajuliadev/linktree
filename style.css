@@ -10,7 +10,7 @@
   --stroke-color: #ffffff7d;
   --surface-color: rgba(53, 47, 47, 0.185);
   --switch-bg-url: white;
-  --icon-color:white;
+  --icon-color: white;
 }
 .mode-light {
   --text-color: black;
@@ -18,7 +18,7 @@
   --stroke-color: black;
   --surface-color: rgba(150, 145, 145, 0.37);
   --switch-bg-url: black;
-  --icon-color:black;
+  --icon-color: black;
 }
 body {
   background-repeat: no-repeat;
@@ -27,7 +27,6 @@ body {
   background-image: var(--bg-url);
   height: 100vh;
   background-position: top;
-  
 }
 /* * usado para aplixar em tudo*/
 body * {
@@ -59,15 +58,14 @@ body * {
 }
 #profile p {
   line-height: 48px;
-  
 }
 
 /*SWITCH*/
 
-#switch{
+#switch {
   position: relative;
   width: 100px;
-  margin:24px auto;
+  margin: 24px auto;
 }
 #switch button {
   width: 32px;
@@ -81,10 +79,10 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
 }
-#switch span{
+#switch span {
   display: block;
-  width:100px;
-  height:24px;
+  width: 100px;
+  height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 9999px;
@@ -126,7 +124,6 @@ ul li a {
 #cargo {
   font-weight: 400;
   font-size: 25px;
- 
 }
 
 #nome {
@@ -156,7 +153,7 @@ ul li a {
   transition: 0.3s ease-in-out;
 }
 .icone-social a svg path {
-  fill:var(--icon-color);
+  fill: var(--icon-color);
 }
 
 #final {
